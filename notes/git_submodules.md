@@ -7,17 +7,30 @@
 ##my attempt
 tried to `git remote add [url] github`
 after that, use `git remote -v`
-	github	https://github.com/vivi3nli/udacity_course_practice.git (fetch)
-	github	https://github.com/vivi3nli/udacity_course_practice.git (push)
-	origin	https://github.com/udacity/pappu-pakia.git (fetch)
-	origin	https://github.com/udacity/pappu-pakia.git (push)
+<pre>
+github	https://github.com/vivi3nli/udacity_course_practice.git (fetch)
+github	https://github.com/vivi3nli/udacity_course_practice.git (push)
+origin	https://github.com/udacity/pappu-pakia.git (fetch)
+origin	https://github.com/udacity/pappu-pakia.git (push)
+</pre>
 and don't know what can be done next, cause when I do `git status` it is 
-	On branch master
-	Your branch is up-to-date with 'origin/master'.
-	nothing to commit, working tree clean
-cause at this time 
+<pre>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+</pre>
+remained to be solved
 ##remove all the ./git (brutal)
 ##use git submodule 子模块
 ###add as a submodule
 use `git submodule add` like this:
 `$ git submodule add [url] [name]`
+if I try this on pappu-pakia and created pappu-pakia-0, I'll see a `.gitmodules` in the main repository
+<pre>
+$ cat .gitmodules
+[submodule "version-control/pappu-pakia-0"]
+	path = version-control/pappu-pakia-0
+	url = https://github.com/udacity/pappu-pakia.git
+</pre>
+and when I check github
+I can see the `pappu-pakia-0 @ fa4c6ba` is able to be opened and used
