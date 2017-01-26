@@ -31,7 +31,7 @@ Every time you send changes to GitHub via the command line, you'll need to type 
 ####如何将已有commit，但没有remote的github文件夹与remote相连：
 
 - 在terminal中使用git remote发现没有remote
-- git remote add [存在本地的remote名，用来指代与之相连的remote，原则上默认使用origin] [url] `git add remote origin https://github.com/vivi3nli/reflections.git`（此处udacity视频内容出错，为使用SSH，对于一个已经形成的remote，[更改url的方法](https://help.github.com/articles/changing-a-remote-s-url/)）
+- git remote add [存在本地的remote名，用来指代与之相连的remote，原则上默认使用origin] [url] `git remote add origin https://github.com/vivi3nli/reflections.git`（此处udacity视频内容出错，为使用SSH，对于一个已经形成的remote，[更改url的方法](https://help.github.com/articles/changing-a-remote-s-url/)）
 - git remote -v :verbose 显示这个remote的详细信息，可以用来确认url是否正确
 - git push origin master 也就是把master branch上的内容push到名字为“origin”的remote上
 
